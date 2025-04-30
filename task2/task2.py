@@ -2,6 +2,9 @@ import sys
 
 
 def where_is_dot(cent_coord: list, radius: int, dot_coord: list) -> int:
+    """Принимает координаты центра круга и его радиус,
+    а также координаты точки. Возвращает 1 - если точка внутри круга,
+    2 - если вне круга, и 0 - если точка лежит на окружности"""
     try:
         dot_cent_distance_squared = (
             (cent_coord[0] - dot_coord[0]) ** 2
